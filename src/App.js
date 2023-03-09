@@ -47,6 +47,7 @@ import Accountsstud from './4admin/Accountsstud';
 import SectionContainer from './4admin/SectionContainer';
 import SampleSection from './4admin/SampleSection';
 import Adminannouncements from './4admin/Adminannouncements'
+import AdminAddModule from './4admin/AdminAddModule'
 import CreateClass from './4admin/CreateClass';
 import Createproff from './4admin/Createproff';
 import Createstud from './4admin/Createstud';
@@ -92,10 +93,11 @@ function App() {
                     
               </Route> 
               <Route path='/kyusilidAdmin' element={userinfo!=null ? <AdminContainer/> : <Login/>}>
-                <Route path='' element={<AdminDashboard/>} />
+                <Route path='' element={<AdminDashboard/>} />le
                 <Route path='department' element={<Department/>}> 
                   <Route path='' element={<Departmentoverview/>} />
                   <Route path='admin_announcements' element={<Adminannouncements/>} />
+                  <Route path='admin_AddModule' element={<AdminAddModule/>} />
                   <Route path='subjects' element={<Subjects/>} />
                   <Route path='accounts' element={<Accountsprof/>} />
                   <Route path='sections' element={<SectionContainer/>}>

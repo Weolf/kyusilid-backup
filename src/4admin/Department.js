@@ -72,6 +72,8 @@ function Department() {
                 <li><hr/></li>
                 <li className="classnavitem " onClick={()=>{navigate('admin_announcements')}}>  Announcements </li>
                 <li><hr/></li>
+                <li className="classnavitem " onClick={()=>{navigate('admin_AddModule')}}>  Add Module </li>
+                <li><hr/></li>
                 <li className={`classnavitem ${isactive('subjects') &&' classnav-active' }`} onClick={()=>{setaccountsnav(false);setclassesnav(false); setsubjectnav(!subjectnav) ;setcurrentpage('subjects')}}>  Subjects</li>
                 <li><hr/></li>
                 {subjectnav &&
